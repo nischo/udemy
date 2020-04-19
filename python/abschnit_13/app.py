@@ -7,6 +7,8 @@ from difflib import get_close_matches
 def getDiscription(text):
 
     text = text.lower()
+    textTitle = text.title()
+    textUpper = text.upper()
 
     with open('data.json') as file:
 
@@ -17,14 +19,21 @@ def getDiscription(text):
             print('No matches found')
         else:
             if text in data:
-                print(data[text])
+                return "".join(data[text])
+                #print(t)
+            elif textTitle in data:
+                t = "".join(data[textTitle])
+                print(t)
+            elif textUpper in data:
+                t = "".join(data[textUpper])
+                print(t)
             else:
                 print('Did you mean: ')
                 for count, item in enumerate(matches):
-                    print(count, item)
-                number = int(input("coose one number: "))
+                    print(count, "-", item, end="\n")
+                number = int(input("choose one number: "))
 
-                print(data[matches[number]])
+                print("".join(data[matches[number]]))
 
 
 end = True
