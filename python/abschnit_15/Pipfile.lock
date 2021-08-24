@@ -35,7 +35,7 @@
                 "sha256:cc8da25076a1fe56c3ac63671e2194458e0c4d9c7becfd52ca251650d517903c",
                 "sha256:e78e426105ac07026ba098f04de8abe9b6e3e98b5befbf89b51a5ef0a4292b03"
             ],
-            "version": "==3.1.4"
+            "version": ">=3.3.0" 
         },
         "decorator": {
             "hashes": [
@@ -114,7 +114,7 @@
                 "sha256:89aab215427ef59c34ad58735269eb58b1a5808103067f7bb9d5836c651b3bb0",
                 "sha256:f0a4641d3cf955324a89c04f3d94663aa4d638abe8f733ecd3582848e1c37035"
             ],
-            "version": "==2.11.2"
+            "version": ">=2.11.3"
         },
         "jsonschema": {
             "hashes": [
